@@ -8,6 +8,14 @@ De dataset bestaat uit drie layers:
  - [adam_netwerk_voetfiets_nodes_poi](nodes_poi.md)
  - [adam_netwerk_voetfiets_poi_adressen](poi_adressen.md)
 
+Aantallen (afgerond):
+
+ - adressen:   587,000 
+ - edges:    1,715,500
+ - nodes:    1,251,000
+
+De dataset is te dowladen via [data.amsterdam.nl](https://data.amsterdam.nl/datasets/7hGzsRXqWSGqHw/loop-en-fietsnetwerk-amsterdam/)
+
 De **edges** (aslijnen wegen) zijn gerelateerd aan de nodes via:
 edges.node_startpoint = nodes_poi.node_id en
 edges.node_endpoint = nodes_poi.node_id
@@ -21,9 +29,3 @@ De pois van het type vot_cluster (cluster van verblijfsobjecten) hebben vaak een
 In de onderstaande afbeelding worden de relaties schematisch weergegeven.
 
 ![relaties](relations.png)
-
-Aantallen (afgerond):
-
- - adressen:   587,000 
- - edges:    1,715,500
- - nodes:    1,251,000
