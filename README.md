@@ -23,6 +23,7 @@ In de onderstaande afbeelding worden de relaties schematisch weergegeven.
 ![relaties](relations.png)
 
 Aantallen (afgerond):
-  587,000 adressen
-1,715,500 edges
-1,251,000 nodes
+
+ - adressen:   587,000 
+ - edges:    1,715,500
+ - nodes:    1,251,000
