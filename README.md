@@ -21,3 +21,8 @@ De pois van het type vot_cluster (cluster van verblijfsobjecten) hebben vaak een
 In de onderstaande afbeelding worden de relaties schematisch weergegeven.
 
 ![relaties](relations.png)
+
+Aantallen (afgerond):
+  587,000 adressen
+1,715,500 edges
+1,251,000 nodes
