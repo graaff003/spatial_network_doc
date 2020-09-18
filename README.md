@@ -1,4 +1,4 @@
-# Loop- en fietsnetwerk documentatie
+# Loop- en fietsnetwerk Amsterdam
 
 Het loop- en fietsnetwerk is afgeleid uit Openstreetmap (OSM) en Basisregistratie Grootschalige Topografie (BGT).
 Alle adresseerbare objecten (verblijfsobject, lig- en standplaats) in Amsterdam met adressen (POI) zijn gekoppeld aan dit netwerk.
