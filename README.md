@@ -10,9 +10,9 @@ De dataset bestaat uit drie layers:
 
 Aantallen (afgerond):
 
- - adressen:   587,000 
- - edges:    1,715,500
- - nodes:    1,251,000
+ - adressen:   606,500 
+ - edges:    1,985,000
+ - nodes:    1,454,500
 
 De dataset is te dowladen via [data.amsterdam.nl](https://data.amsterdam.nl/datasets/7hGzsRXqWSGqHw/loop-en-fietsnetwerk-amsterdam/)
 
