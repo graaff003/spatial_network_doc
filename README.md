@@ -54,6 +54,9 @@ Go back to [table of Contents](#top_row)
 
 Het notebook laat de mogelijkheden zien van de dataset.  
 Op basis van een uitsnede wordt met een Breath-First algoritme een afstandsmatrix opgebouwd.
+Het notebook vind je onder:  
+notebook/demo_network_analysis.ipynb
+
 
 ## <a name="section_3"></a> Voorbereiden python omgeving
 Go back to [table of Contents](#top_row)
