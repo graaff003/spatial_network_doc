@@ -47,6 +47,7 @@ pip install jupyterlab
 pip install owslib # ogc services
 # geopandas dependecies
 pip install rtree #spatial indexing
+pip install rasterio
 
 
 echo wellicht jupyterlab extensie installeren voor ipyleaflet?
