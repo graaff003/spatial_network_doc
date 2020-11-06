@@ -4,7 +4,7 @@
  - section 1. [Beschrijving datasets](#section_1)
  - section 2. [Demo Jupyter notebook](#section_2)
  - section 3. [Voorbereiden python omgeving](#section_3)
-  
+
 
 ## <a name="section_1"></a> Beschrijving datasets
 Het loop- en fietsnetwerk is afgeleid uit Openstreetmap (OSM) en Basisregistratie Grootschalige Topografie (BGT).
@@ -55,7 +55,7 @@ Go back to [table of Contents](#top_row)
 Het notebook laat de mogelijkheden zien van de dataset.  
 Op basis van een uitsnede wordt met een Breath-First algoritme een afstandsmatrix opgebouwd.
 Het notebook vind je onder:  
-notebook/demo_network_analysis.ipynb
+notebook/demo_network_analysis_custom_bfs.ipynb
 
 
 ## <a name="section_3"></a> Voorbereiden python omgeving
