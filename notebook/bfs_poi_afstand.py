@@ -4,7 +4,7 @@
 # # Distance Matrix Calculation
 
 # This script is based on the code in the following git repository:
-# https://git.datapunt.amsterdam.nl/Data-Oplossingen/waardecontainers_afval/blob/master/python/netwerk_analyse/afval_module.py
+# https://git.data.amsterdam.nl/Data-Oplossingen/waardecontainers_afval/blob/master/python/netwerk_analyse/afval_module.py
 #
 # The script calculates a distance matrix with a threshold using Breath First Search algorithm. A graph is build based on nodes and edges (walking distance as weight) retrieved from Postgres DB tables. The threshold can be set as parameter in the get_distance_matrix function and the 'type' node that is used as from node can be set in the create_graph function where all poi's are retrieved.
 #
@@ -238,39 +238,4 @@ def breadth_first_search(graph, p1, threshold):
                     frontier.put(out)  # update the frontier, to continue from there
 
     return cost_per_node
-
-
-# # Main Function
-def network_run(p_node_data, p_edge_data, p_poi_data,poi_type_from, poi_type_to, cutoff):
-
-    # Retrieve the nessesary data
-    node_data = get_data('node',p_node_data)
-    edge_data = get_data('edge',p_edge_data)
-    poi_data = get_data('poi',p_poi_data)
-
-    # return the graph 
-    graph = create_graph(poi_type_from, poi_type_to,node_data,edge_data,poi_data)
-
-    # return the matrix
-    data = get_distance_matrix(graph, threshold=cutoff)
-
-
-    #print ('Start conversion to dataframe: ',str(startDT))
-    data_df = pd.DataFrame.from_records(data, columns=['van_node_id', 'naar_node_id', 'afstand'])
-    #print ('number of rows in frame:', len(data_df))
-
-    # get file location
-    csv_afv_poi_afstand = os.environ.get('out_csv')
-
-    #print ('Start writing to csv: ',str(startDT))
-    data_df.to_csv(csv_afv_poi_afstand,index=False,header=True,sep=';')
-    #print ('Ended writing to csv: ',str(datetime.datetime.now() - startDT))
-
-
-    return data_df
-
-"""
-if __name__ == '__main__':
-    # call the procedure from poi_type , to_poi_type, cutoff distance
-    network_run('ov_halte', 'bag_poi', 1000)
-"""
+#
