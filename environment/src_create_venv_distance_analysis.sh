@@ -29,6 +29,7 @@ pause 'Press [Enter] key to continue...'
 
 COMMENT
 echo install dependencies..
+sudo apt install libspatialindex-dev # dependency spatial indexing for rtree
 pip install --upgrade pip
 pip install matplotlib
 # dependencies for geopandas
